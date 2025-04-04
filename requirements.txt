@@ -1,2 +1,3 @@
 # En este archivo anoto las librerías que utilice en mi proyecto
 jupyter
+notebooks
