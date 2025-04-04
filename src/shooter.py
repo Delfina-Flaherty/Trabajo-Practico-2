@@ -13,16 +13,6 @@ def calcular_puntaje(kills, assists, deaths):
 # en base a los datos de la ronda actual.
 def actualizar_estadisticas(ronda, estadisticas, mvp_name):
     for jugador, datos in ronda.items():
-        # Si el jugador no existe en el diccionario de estadisticas, lo inicializamos
-        # con 0 kills, 0 assists, 0 deaths y 0 mvps.
-        if jugador not in estadisticas:
-            estadisticas[jugador] = {
-                'kills': 0,
-                'assists': 0,
-                'deaths': 0,
-                'mvps': 0,
-                'puntos': 0
-            }
         # Actualizamos las estadisticas del jugador
         # sumando las kills, assists y deaths de la ronda actual.
         estadisticas[jugador]['kills'] += datos['kills']
